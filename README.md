@@ -13,3 +13,6 @@ git describe --tags --dirty --always --long >> version.txt
 https://github.com/warner/python-versioneer/blob/master/details.md
 
 git log 0.0.2..HEAD --no-merges
+
+git log 0.0.2..HEAD --no-merges --pretty=oneline >> result.txt
+
