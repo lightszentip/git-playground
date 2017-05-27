@@ -1,1 +1,2 @@
 Foobar git tag test
+Minor change
