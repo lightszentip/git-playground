@@ -1,2 +1,3 @@
 Foobar git tag test
 Minor change
+Major change
