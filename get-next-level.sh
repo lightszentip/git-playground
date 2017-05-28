@@ -52,4 +52,5 @@ else
 		git tag $new_version -m "lw tag new version by script"	
 	fi
 fi
+echo "Finish"
 
