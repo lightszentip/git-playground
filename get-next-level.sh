@@ -42,10 +42,13 @@ if [ $exist_tag -gt 0 ]
 then
 	echo "Tag exist - break"
 else
+	echo "Create new Tag"
 	if [ $annotated_tag ]
 	then
+		echo "Create a annotated tag"
 		git tag -a $new_version -m "new version by script"
 	else
+		echo "Create a lw tag"
 		git tag $new_version -m "lw tag new version by script"	
 	fi
 fi
