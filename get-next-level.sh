@@ -1,5 +1,5 @@
 #!/bin/bash
-currenttag=$(git describe --tags --dirty --always --long | grep -P '[0-9]+.[0-9]+.[0-9]+' -o 2>&1)
+currenttag=$(git describe --tags --dirty --always --long | grep -P '^[0-9]+.[0-9]+.[0-9]+' -o 2>&1)
 count_commits=$(git log $currenttag..HEAD --no-merges --pretty=oneline  | grep -c .*[a-zA-Z].* 2>&1)
 minor=$(git log $currenttag..HEAD --no-merges --pretty=oneline | grep -c "XXX:.*Minor" 2>&1)
 major=$(git log $currenttag..HEAD --no-merges --pretty=oneline | grep -c "XXX:.*Major" 2>&1)
